@@ -14,7 +14,7 @@
   margin-bottom: 20px;
 }
 
-input[type="search"] {
+input[type='search'] {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -28,6 +28,30 @@ input[type="search"] {
   padding: 0;
   margin: 0;
   display: grid; /* Use grid for layout */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsive columns */
   gap: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  width: 250px;
+}
+
+.search-container input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+.search-container .search-img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }

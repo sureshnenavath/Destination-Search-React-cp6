@@ -22,12 +22,16 @@ const DestinationSearch = props => {
   return (
     <div className="main-container">
       <h1 className="main-heading">Destination Search</h1>
-      <div>
+      <div className="search-container">
         <input
           placeholder="Search Destination"
           type="search"
           value={searchInput}
           onChange={setSearchInputHandle}
+        />
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/destinations-search-icon-img.png"
+          alt="search icon"
         />
       </div>
       <ul className="un-order-list">
