@@ -1,0 +1,22 @@
+/* Write your CSS here */
+.li-element {
+  display: flex;
+  flex-direction: column; /* Image above text */
+  align-items: center;
+  border: 1px solid #eee; /* Optional border */
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.img-url {
+  width: 100%; /* Or a specific size */
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  object-fit: cover; /* Prevents image distortion */
+}
+
+.destinationItem {
+  text-align: center;
+}
